@@ -5,7 +5,7 @@ import { TextInput } from "react-native-gesture-handler";
 
 const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
   return (
-    <View style={styles.parentBackground}>
+    <View style={styles.backgroundStyle}>
       <Feather style={styles.searchIcon} name="search" />
       <TextInput
         autoCapitalize="none"
@@ -21,11 +21,12 @@ const SearchBar = ({ term, onTermChange, onTermSubmit }) => {
 };
 
 const styles = StyleSheet.create({
-  parentBackground: {
+  backgroundStyle: {
     backgroundColor: "#F0EEEE",
     height: 50,
     borderRadius: 5,
     marginTop: 10,
+    marginBottom: 10,
     marginHorizontal: 15,
     flexDirection: "row",
   },
